@@ -25,7 +25,8 @@ UserRoleAccess(Spring)
                 "resource" : "PUBLIC_DB_1",
                 "accesstype" : "WRITE",
                 "roles" : "Database_Handler"
-          }```
+          }
+      ```
     - Respose :
     - ```
         { 
@@ -33,7 +34,8 @@ UserRoleAccess(Spring)
             "resource": "PUBLIC_DB_1",
             "accesstype": "WRITE",
             "roles": "Database_Handler"
-        }```
+        }
+      ```
         
 - ***/roles/adduserrole*** 
     - To add a new role to a user
@@ -43,9 +45,11 @@ UserRoleAccess(Spring)
                 "superuser" : "akash",
                 "user_id" : "dev",
                 "role" : "admin"
-            }```
+            }
+      ```
     - Respose :
-    - ```{
+    - ```
+        {
             "status": "User Role Created",
             "userRole": [
                 {
@@ -54,29 +58,43 @@ UserRoleAccess(Spring)
                     "roles": "admin"
                 }
             ]
-        }```
+        }
+      ```
     - Here *superuser* is to specify the user who executes this query as only *admin* has the right to add/delete roles
     
 - ***/roles/deleterole*** 
     - To delete an existing role from a user
     - Request-Type : JSON
-    - ``` {
+    - ``` 
+            {
                 "superuser" : "akash",
                 "user_id" : "sample1",
                 "role" : "dev"
-            }```
+            }
+      ```
     - Respose :
     - ```{
-            "status": "User Role Created",
-            "userRole": [
-                {
-                    "id": 13,
-                    "user_id": "dev",
-                    "roles": "admin"
-                }
-            ]
-        }```
+            "status": "User Deleted",
+         }
+      ```
     - Here *superuser* is to specify the user who executes this query as only *admin* has the right to add/delete roles
+
+- ***/resourceaccess/checkaccess*** 
+    - To delete an existing role from a user
+    - Request-Type : JSON
+    - ``` 
+            {
+                "resource" : "PUBLIC_DB_1",
+                "accesstype" : "DELETE",
+                "user_id" : "akash1"
+            }
+      ```
+    - Respose :
+    - ```
+        {
+            "status": "ACCESS NOT ALLOWED"
+        }
+      ```
 
 ## Steps to Run
 - Create a MySQL DB 'users'
