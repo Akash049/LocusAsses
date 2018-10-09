@@ -1,0 +1,13 @@
+com/assignment/locus/model/Access.class
+com/assignment/locus/repository/AccessRepository.class
+com/assignment/locus/controller/UserRoleController.class
+com/assignment/locus/repository/UserRepository.class
+com/assignment/locus/model/UserRole.class
+com/assignment/locus/model/User.class
+com/assignment/locus/UserApplication.class
+com/assignment/locus/repository/UserRoleRepository.class
+com/assignment/locus/dao/UserDAO.class
+com/assignment/locus/controller/AccessController.class
+com/assignment/locus/controller/UserController.class
+com/assignment/locus/dao/AccessDAO.class
+com/assignment/locus/dao/UserRoleDAO.class

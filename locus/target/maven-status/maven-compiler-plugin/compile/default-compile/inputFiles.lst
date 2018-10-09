@@ -1,0 +1,13 @@
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/UserApplication.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/controller/AccessController.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/model/User.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/dao/AccessDAO.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/model/Access.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/repository/UserRepository.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/model/UserRole.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/repository/UserRoleRepository.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/controller/UserController.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/controller/UserRoleController.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/repository/AccessRepository.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/dao/UserDAO.java
+/Users/akashchandra/Documents/workspace_STS/locus/src/main/java/com/assignment/locus/dao/UserRoleDAO.java
