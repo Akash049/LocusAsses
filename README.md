@@ -20,18 +20,36 @@ UserRoleAccess(Spring)
 - ***/resourceaccess/role*** 
     - To add value(resource,  role, access_type) to access table
     - Request-Type : JSON
-    - ``` {
-                "resource" : "PUBLIC_DB_1",
+    - ``` { "resource" : "PUBLIC_DB_1",
                 "accesstype" : "WRITE",
                 "roles" : "Database_Handler"
             }```
     - Respose :
-    - ```{
-            "id": 7,
+    - ```{ "id": 7,
             "resource": "PUBLIC_DB_1",
             "accesstype": "WRITE",
             "roles": "Database_Handler"
         }```
+        
+- ***/roles/adduserrole*** 
+    - To add a new role to a user
+    - Request-Type : JSON
+    - ``` { "superuser" : "akash",
+                "user_id" : "dev",
+                "role" : "admin"
+            }```
+    - Respose :
+    - ```{
+    "status": "User Role Created",
+    "userRole": [
+        {
+            "id": 13,
+            "user_id": "dev",
+            "roles": "admin"
+        }
+    ]
+}```
+    - Here *superuser* is to specify the user who executes this query as only *admin* has the right to add/delete roles
 
 ## Steps to Run
 - Create a MySQL DB 'users'
