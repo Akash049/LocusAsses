@@ -7,6 +7,7 @@ UserRoleAccess(Spring)
 | Software   |      Verison  | 
 |----------  |:-------------:|
 | Spring     |  1.5.8        |
+| Tomcat     |  8.5          |
 | Java       |  1.8.0_121    |
 |  MySql     |  5.7.23       |
 
@@ -99,3 +100,5 @@ UserRoleAccess(Spring)
 ## Steps to Run
 - Create a MySQL DB 'users'
 - The Project will automatically create 3 tables - 'user', 'user_role' and 'access'
+- Add Tomcat as the server
+- In the Project Directory,  select UserApplication.java and execute "Run as Java Application"
