@@ -3,10 +3,11 @@ UserRoleAccess(Spring)
 
 ## Project Description
 - User Access and Authentication Project
-| Software  | Version  |   
-|---        |---       |
-| Spring    |  1.5.4   |
-| Java      |  1.8     |
+
+| Software   |      Verison  | 
+|----------  |:-------------:|
+| Spring     |  1.5.8        |
+| Java       |    1.8        |
 
 ## Steps to Run
 - Create a MySQL DB 'users'
