@@ -1,4 +1,4 @@
-# LocusAsses
+# LocusAssess
 UserRoleAccess(Spring)
 
 ## Project Description
