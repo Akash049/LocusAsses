@@ -12,9 +12,26 @@ UserRoleAccess(Spring)
 
 ### Database name : ***users***
 ### Table definition
-- user : To store the username and password
-- user_role : To store a role (like admin, dev) corresponding to a username
-- access : To store the relation between resoucre (like "PUBLIC_DB"), role (admin etc.) and Access_Type (READ, WRITE, DELETE).
+- ***user*** : To store the username and password
+- ***user_role*** : To store a role (like admin, dev) corresponding to a username
+- ***access*** : To store the relation between resoucre (like "PUBLIC_DB"), role (admin etc.) and Access_Type (READ, WRITE, DELETE).
+
+### API Endpoints
+- ***/resourceaccess/role*** 
+    - To add value(resource,  role, access_type) to access table
+    - Request-Type : JSON
+    - ``` {
+                "resource" : "PUBLIC_DB_1",
+                "accesstype" : "WRITE",
+                "roles" : "Database_Handler"
+            }```
+    - Respose :
+    - ```{
+            "id": 7,
+            "resource": "PUBLIC_DB_1",
+            "accesstype": "WRITE",
+            "roles": "Database_Handler"
+        }```
 
 ## Steps to Run
 - Create a MySQL DB 'users'
